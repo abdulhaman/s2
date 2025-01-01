@@ -1,0 +1,422 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Rayfield Example Window",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
+   Theme = "Ocean - Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "S2 HUB "
+   },
+
+   Discord = {
+      Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "Sr2 Team", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "s2 | key",
+      Subtitle = "رابط المفتاح في الديسكورد فقط",
+      Note = "ادخل سيرفري من قناتي ", -- Use this to tell the user how to get a key
+      FileName = "اكتب المفتاح هناا", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = true, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"https://pastebin.com/raw/sk0YzzeJ"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+local MainTab = Window:CreateTab("سكربتات ", nil) -- Title, Image
+local MainSection = MainTab:CreateSection(" كل السكربتات تحت ")
+
+Rayfield:Notify({
+   Title = "!لقد فعلت السكربت",
+   Content = "شكرا لتشغيل ",
+   Duration = 5,
+   Image = nil,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local Button = MainTab:CreateButton({
+   Name = "  v1 سكربت طيران عربي ",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/61LLBEX5"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " v2 سكربت طيران ",
+   Callback = function()
+   loadstring(game:HttpGet("https://github.com/l0ckerV5/RobIox-Exploits/raw/refs/heads/main/Protected_2354134114061323.txt"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت مشيات  [ ما يظهر للناس ]",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/Uq8vajaM"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت يخلي روبلوكس واقعية [ RTX ]  ",
+   Callback = function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/TPC12/RTX-Script-wow/main/RTX%20Script%20Roblox"))() 
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت القفل ",
+   Callback = function() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/ShiftLock'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت كشف ",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/icP9f0FF"))()
+   end,
+})
+
+local Button = MianTab:CreateButton({
+   Name = " سكربت تسلق ",
+   Callback = function()
+   https://pastebin.com/raw/k2ymkUNH#:~:text=loadstring(game%3AHttpGet(%22https%3A//raw.githubusercontent.com/HeyGyt/walkonwalls/main/main%22))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت يطردك انت فقط ",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0qDyLDWt"))()
+
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت طيران السيارة ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/hasan08122020108181818/HASA/759cc1030d8a4f4c23b32e8cb8550b47f567d1b9/carflyronald"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت كيبورد ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت حرب السيوف أسرق الوقت من الاخرين ",
+   Callback = function()  
+loadstring(game:HttpGet('https://raw.githubusercontent.com/anyahubs/swordgame/main/anya.lua'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت جرافيكس ",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/moh3mah/KATAKORI.ZR/main/Geeetho"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت مراقبة الناس ",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/wyvdb7gr'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت كل الرقصات ",
+   Callback = function()
+  loadstring(game:HttpGet("https://pastebin.com/raw/bz7KtQjb"))() 
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت كاميرا ",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Break%20Camera'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت تنقل ",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Teleport%20Gui'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت الشقلبة ",
+   Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/yjxXnxbS'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت التيليسكوب ",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/8T0STS4f'))()
+   end,
+})
+
+local MainTab = Window:CreateTab("ماب البيوت ", nil) -- Title, Image
+local MainSection = MainTab:CreateSection(" كل السكربتات تحت ")
+
+local Button = MainTab:CreateButton({
+   Name = " نسخ سكنات ",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Rochips-Universal-21865"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "[ بدون مفتاح ] سكربت قتل ",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrollGuiMaker/f0rtuit0us-hub/refs/heads/main/old"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "[ بدون مفتاح ] سكربت قتل ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RFR-R1CH4RD/Loader/main/Salvatore.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت قتل [ بمفتاح ]",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RFR-R1CH4RD/Loader/main/Salvatore.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت يوسف ",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Brookhave-lraq-20207"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت ايات ",
+   Callback = function()
+   loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-i2att-22075"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "ZHM HUB ",
+   Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/apeludo999/GgScripts/refs/heads/main/ZKM%20Hub%20Brookhaven.lua'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت سندر اكس ",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/NormalSS.lua'))()
+   end,
+})
+
+local MainTab = Window:CreateTab("MM2 ", nil) -- Title, Image
+local MainSection = MainTab:CreateSection(" كل السكربتات تحت ")
+
+local Button = MainTab:CreateButton({
+   Name = "MM2 [1]",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/ArrayField/main/SymphonyHub.lua'))(
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "MM2 [2]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+   end,
+})  
+    local Button = MainTab:CreateButton({
+   Name = "MM2 [3]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/proplayer123-z/overdrive-h/refs/heads/main/odh.lua"))()
+   end,
+})
+
+    local Button = MainTab:CreateButton({
+   Name = "MM2 [4]",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Murder%20Mystery'))()
+   end,
+})
+    local Button = MainTab:CreateButton({
+   Name = "MM2[5] [بمفتاح]",
+   Callback = function()
+   loadstring(game:HttpGet("https://overdrive-h.ohd.workers.dev/?d=loader"))()
+   end,
+})
+
+local Label = MianTab:CreateLabel("قريبا ", nil, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+
+local MainTab = Window:CreateTab("بلوكس فروت ", nil) -- Title, Image
+local MainSection = MainTab:CreateSection(" كل السكربتات تحت ")
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت Thunder Z [ بمفتاح ] ",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/RemakeMobileTest', true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت Domadic Hub [ بدون مفتاح ]",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت KayMobile [ بدون مفتاح ] "",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/AXCScript/KayMobile/main/Script-Loader'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت MTriet Hub [ بدون مفتاح ] ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت HoHo Hub [ بمفتاح ] ",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت REDz Hub [ بدون مفتاح ] ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت Cokka hub [ بمفتاح ] ",
+   Callback = function()
+   loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت Speed hub x [ بمفتاح ] ",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = " Fai fao hub [ بدون مفتاح] ",
+   Callback = function()
+   loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Script/main/Fai-Fao-Ver2.lua")()
+   end,
+})
+
+local Label = MianTab:CreateLabel("قريبا ", nil, Color3.fromRGB(255, 255, 255), false) -- Title, Icon, Color, IgnoreTheme
+
+local MainTab = Window:CreateTab(" ادمن  ", nil) -- Title, Image
+local MainSection = MainTab:CreateSection(" كل السكربتات تحت ")
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت ادمن [ Infinite Yield ] ",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت ادمن [Joy admin]",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua'))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "سكربت ادمن [Sr2 admin]",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/P2HG2vx7"))(
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "قريبا",
+   Callback = function()
+   
+   end,
+})
+
+local MainTab = Window:CreateTab(" الاعب  ", nil) -- Title, Image
+local MainSection = MainTab:CreateSection(" كل السكربتات تحت ")
+
+local Button = MainTab:CreateButton({
+   Name = " سكربت عندما تملس شخص تقتله",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/fedoratums/Base-Script/Base-Script/fedoratum punch fling",true))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "", 
+
+local Button = MainTab:CreateButton({
+   Name = "TSBG [1] عربي",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/MgmDLrBp"))()
+   end,
+})
+
+local MainTab = Window:CreateTab(" السرعه والنط     ", nil) -- Title, Image
+
+local Slider = MainTab:CreateSlider({
+   Name = "سرعة المشي",
+   Range = {1, 753},
+   Increment = 1,
+   Suffix = "السرعه",
+   CurrentValue = 16,
+   Flag = "sliderws", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
+
+local Slider = MainTab:CreateSlider({
+   Name = "النط ",
+   Range = {1, 350},
+   Increment = 1,
+   Suffix = "النط",
+   CurrentValue = 16,
+   Flag = "sliderjp", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+   end,
+})
